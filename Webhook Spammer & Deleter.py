@@ -1,7 +1,21 @@
-import requests
+import subprocess
 import time
-from pystyle import * 
 
+try:
+    import requests
+    import pystyle
+except:
+    print('Module not installed')
+    print('Installing For you...')
+    subprocess.Popen("pip install Pystyle", shell=True) # Run command
+    subprocess.Popen("pip install requests", shell=True) # Run command
+    time.sleep(5)
+    input('Press enter when download is done...')
+    from pystyle import *
+
+import requests
+import pystyle
+from pystyle import *
 
 message = ''
 
