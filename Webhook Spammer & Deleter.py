@@ -7,10 +7,12 @@ try:
 except:
     print('Module not installed')
     print('Installing For you...')
-    subprocess.Popen("pip install Pystyle", shell=True) # Run command
-    subprocess.Popen("pip install requests", shell=True) # Run command
-    time.sleep(5)
-    input('Press enter when download is done...')
+    print('Press enter when download is done...')
+    time.sleep(1)
+    subprocess.Popen("pip install Pystyle", shell=True)
+    subprocess.Popen("pip install requests", shell=True) 
+    time.sleep(2)
+    input('You can now press Enter')
     from pystyle import *
 
 import requests
@@ -107,3 +109,7 @@ Choose : '''))
         Start()
 
 Start()
+
+
+
+
