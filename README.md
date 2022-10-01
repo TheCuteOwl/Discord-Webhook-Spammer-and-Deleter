@@ -9,9 +9,8 @@
   * Webhook Spammer (Without Custom Message)
   * Webhook Spammer (With Custom Message)
   * Webhook Deleter (Without Custom Message)
- 
-* Next Update :
   * Delete multiple webhook in 1 time
+  
 
 -----
 
