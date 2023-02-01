@@ -3,7 +3,6 @@ import time
 
 try:
     import requests
-    import pystyle
 except:
     print('Module not installed')
     print('Installing For you...')
@@ -13,11 +12,8 @@ except:
     subprocess.Popen("pip install requests", shell=True) 
     time.sleep(2)
     input('You can now press Enter')
-    from pystyle import *
 
 import requests
-import pystyle
-from pystyle import *
 
 message = ''
 
@@ -26,23 +22,23 @@ def deletemultiple():
         while (webhook := f.readline().rstrip()):
 
             
-            print(Colorate.Horizontal(Colors.blue_to_green, 'deleting : ' + webhook))
+            print(( 'deleting : ' + webhook))
             requests.delete(webhook)
-            print(Colorate.Horizontal(Colors.blue_to_green,'Successfully deleted :' + webhook))
+            print(('Successfully deleted :' + webhook))
     input('Finished press Enter to quit')
     quit()
 
 
 def delete():
-    webhook = input(Colorate.Horizontal(Colors.blue_to_green, 'Webhook URL : '))
+    webhook = input(( 'Webhook URL : '))
     requests.delete(webhook)
-    print(Colorate.Horizontal(Colors.blue_to_green, 'Successfully Deleted'))
-    input(Colorate.Horizontal(Colors.blue_to_green, 'Press Enter to quit'))
+    print(( 'Successfully Deleted'))
+    input(( 'Press Enter to quit'))
     quit()
 
 
 def Spamming():
-    url = input(Colorate.Horizontal(Colors.blue_to_green, 'Webhook URL : '))
+    url = input(( 'Webhook URL : '))
     message = "@everyone | Spam Moment " + str("⛓️" * 1000)
     data = {
     "content" : message,
@@ -58,12 +54,12 @@ def Spamming():
         except requests.exceptions.HTTPError as err:
             print(err)
         else:
-          print(Colorate.Horizontal(Colors.blue_to_green, "Send successfully, code {}.".format(result.status_code)))
+          print(( "Send successfully, code {}.".format(result.status_code)))
 
 
 def SpammingCustom():
     url = input('Webhook URL : ')
-    messages = input(Colorate.Horizontal(Colors.blue_to_green,'Message To Spam : '))
+    messages = input(('Message To Spam : '))
     message = messages
     data = {
     "content" : message,
@@ -83,7 +79,7 @@ def SpammingCustom():
 
 
 def Start():    
-    choice = input(Colorate.Horizontal(Colors.blue_to_green, '''What do you want ?
+    choice = input(( '''What do you want ?
 [1]Spamming (Without Custom Message)
 [2]Spamming (With Custom Message)
 [3]Delete Webhook 
@@ -103,7 +99,7 @@ Choose : '''))
         deletemultiple()
 
     else:
-        print(Colorate.Horizontal(Colors.blue_to_green, 'Wrong Number'))
+        print(( 'Wrong Number'))
         time.sleep(0.5)
         print('\n' * 100)
         Start()
