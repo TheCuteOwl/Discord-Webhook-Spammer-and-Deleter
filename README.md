@@ -1,7 +1,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-# Why a new update : I decided to remove everything with Pystyle in it, Why ?
+Why a new update : I decided to remove everything with Pystyle in it, Why ?
 
 * <a href="https://medium.com/checkmarx-security/hunting-for-malicious-code-the-dangers-of-wasp-stealer-e0d073913623">Why pystyle not safe</a>
 
